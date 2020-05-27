@@ -6,11 +6,14 @@ public class Item : MonoBehaviour
 {
     public string itemName = "Axe";
     public string itemDesc = "Doubled Edged Axe";
+    public Sprite itemIcon;
     public int attackStrength = 25;
     
     // Start is called before the first frame update
     void Start()
     {
-        transform.Rotate(new Vector(15,15,15) * Time.deltaTime);
+        Debug.Log("Name: " + itemName);
+        Debug.Log("Description: " + itemDesc);
+        Debug.Log("Attack Strength: " + attackStrength);
     }
 }
